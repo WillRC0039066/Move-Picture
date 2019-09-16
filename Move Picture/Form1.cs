@@ -16,5 +16,30 @@ namespace Move_Picture
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            txtBxName.Location = new Point(txtBxName.Location.X - 5, txtBxName.Location.Y);
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            txtBxName.Location = new Point(txtBxName.Location.X + 5, txtBxName.Location.Y);
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            txtBxName.Location = new Point(txtBxName.Location.X , txtBxName.Location.Y -5);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            txtBxName.Location = new Point(txtBxName.Location.X , txtBxName.Location.Y + 5);
+        }
     }
 }
